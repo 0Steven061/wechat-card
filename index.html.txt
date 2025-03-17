@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转微信卡片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .card h1 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .card button {
+            background-color: #07c160; /* 微信绿色 */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #06ad54; /* 深绿色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>添加微信好友</h1>
+        <p>点击下方按钮，快速跳转到微信添加好友页面。</p>
+        <button onclick="redirectToWeChat()">立即跳转</button>
+    </div>
+
+    <script>
+        function redirectToWeChat() {
+            // 跳转到指定链接
+            window.location.href = 'http://kk.wtkko.cn/dNkTzi';
+        }
+    </script>
+</body>
+</html>
